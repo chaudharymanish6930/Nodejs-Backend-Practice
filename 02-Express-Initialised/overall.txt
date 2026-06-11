@@ -1,0 +1,4 @@
+npm init -y  => node js application initiate
+
+npm i express => install express package
+
