@@ -1,0 +1,26 @@
+GET => server se data lena ho ya fetch ho tub use karte hain
+POST => Server prr data send karna ho toh use karte hain 
+PATCH => server prr data already present hain or use data ko update karna hain
+DELETE => server prr data hain or usko delete karna hain
+
+
+// note user send to the backend
+note ={
+    title:"India",
+    discription:"I love my Country"
+}
+
+const notes[
+{
+    title:"India",
+    discription:"I love my Country"
+},
+{
+    title:"India",
+    discription:"I love my Country"
+},
+{
+    title:"India",
+    discription:"I love my Country"
+}
+]
