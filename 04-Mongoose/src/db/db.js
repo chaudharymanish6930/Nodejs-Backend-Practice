@@ -6,4 +6,11 @@ const connectDB = async () => {
     console.log("Connected to DB")
 };
 
+/* 
+async function connectDB(){
+await mongoose.connect("Uri from mongodb campass")
+console.log("Connected to DB")
+}
+*/
+
 module.exports = connectDB;

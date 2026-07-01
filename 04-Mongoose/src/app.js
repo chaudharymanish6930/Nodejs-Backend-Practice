@@ -27,12 +27,20 @@ app.post("/notes", async (req,res)=>{
 
 app.get('/notes', async (req, res)=>{
     const notes = await noteModel.find() // return array[]
-    // const notes = await noteModel.findOne({  // return only one
-    //     title:"Manish"
-    // })
-    // const notes = await noteModel.find({
-    //     title:"Aman Raghav"
-    // })
+/*    const notes = await noteModel.findOne({  // return only one
+    give any condition 
+    return null if data not exist
+        title:"Manish"
+    })
+    const notes = await noteModel.find({
+      also able to apply any condition about
+        title:"Aman Raghav"
+    })
+*/
+    /* 
+    find => [{},{}] or []
+    findOne => {} or null
+    */
     res.status(200).json({
         message:"Notes Fetched Successfully",
         notes:notes
@@ -61,4 +69,5 @@ app.patch("/notes/:id", async(req, res)=>{
         message:"Update Successfully"
     })
 })
+
 module.exports=app
